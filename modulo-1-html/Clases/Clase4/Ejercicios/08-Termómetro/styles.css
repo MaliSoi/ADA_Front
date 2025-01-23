@@ -1,0 +1,61 @@
+
+ul {
+    list-style: none; /* sacamos el punto a la lista desordenada*/
+    padding: 0;
+}
+
+li {
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio entre elementos */
+  }
+  
+/* Seleccionamos el primer y último elemento li para ponerlos en negrita */
+li:first-child,
+li:last-child {
+  font-weight: bold;
+}
+
+.temp-50{ 
+    background-color: #fe3300;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-45{ 
+    background-color: #ff9953;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-40{ 
+    background-color: #ffca00;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-35{ 
+    background-color: #fdff66;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-30{ 
+    background-color: #fcfde6;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-25{ 
+    background-color: #d1f7fc;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-20{ 
+    background-color: #9ee7fe;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-15{ 
+    background-color: #01ccff;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-10{ 
+    background-color: #0099ff;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-5{ 
+    background-color: #0165fe;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
+.temp-0{ 
+    background-color: #0109fe;
+    width: 80px ;  /* Ajusta el ancho según tus necesidades */
+}
