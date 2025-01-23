@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+   
+  }
+
+  .section {
+    padding: 20px; /* Espacio alrededor de la lista */
+  }   
+  
+  .subtitulo {
+    font-family: 'Shadows Into Light', serif;
+    font-size: 24px;
+    font-weight: normal;
+    /* Eliminamos font-weight: bold; */
+  }
+
+  .tareas {
+    padding: 20px; /* Espacio alrededor de la lista */
+   line-height: 0.8;
+  }
+
+  .tarea-1, .tarea-2, .tarea-3, .tarea-4, .tarea-5, .tarea-6 {
+    margin-bottom: 70px; /* Espacio entre cada tarea */
+  }
+  .estado-hecho {
+    background-color: #9ecd03;
+    width: 120px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px; /* Agrega padding si lo deseas */
+  }
+
+  .estado-pendiente {
+    background-color: #28bbd8;
+    width: 120px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px; /* Agrega padding si lo deseas */
+  }
+
+  .estado-haciendo {
+    background-color: #e88c61;
+    width: 120px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px; /* Agrega padding si lo deseas */
+  }
+
+  .estado-cancelado {
+    background-color: #ef4141;
+    width: 120px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px; /* Agrega padding si lo deseas */
+  }
