@@ -1,0 +1,32 @@
+.Titulo-principal {
+    font-family: 'Poppins', serif;
+    font-size: 3.5rem;
+}
+
+.texto{
+    font-family: 'Inter', serif;
+    color: rgb(122, 120, 120);
+    margin-bottom: 30px;
+}
+
+.texto a{
+    color: rgb(19, 178, 192);
+    text-decoration: none;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.texto-3{
+    font-family: "Smooch Sans", serif;
+    font-style: italic;
+    font-size: larger;
+}
+
+
+
