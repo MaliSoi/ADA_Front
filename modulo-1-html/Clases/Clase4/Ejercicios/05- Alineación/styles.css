@@ -1,0 +1,14 @@
+/* Clase para alinear a la izquierda */
+.izquierda {
+    text-align: left;
+}
+
+/* Clase para alinear al centro */
+.centro {
+    text-align: center;
+}
+
+/* Clase para alinear a la derecha */
+.derecha {
+    text-align: right;
+}
