@@ -5,27 +5,37 @@ body {
    .subtitulo {
     font-size: 20px;
     font-weight: normal;
+    
     }
  
-    .subtitulo-1 {
-        color: blueviolet;
+    .subtitulo-1 a {
+        color: rgb(43, 202, 226);
         margin-top: 60px;
+        text-decoration: none; /* Quita el subrayado */
         }
-    .subtitulo-2 {
-        color: rgb(43, 141, 226);
+        
+    .subtitulo-2 a {
+        color: rgb(232, 116, 49);
         margin-top: 60px;
+        text-decoration: none; /* Quita el subrayado */
          }
-    .subtitulo-3 {
+
+    .subtitulo-3 a {
          color: rgb(226, 43, 156);
          margin-top: 60px;
+         text-decoration: none; /* Quita el subrayado */
           }
-    .subtitulo-4 {
+
+    .subtitulo-4 a {
           color: rgb(86, 43, 226);
           margin-top: 60px;
+          text-decoration: none; /* Quita el subrayado */
            }
-    .subtitulo-5 {
+
+    .subtitulo-5 a {
           color: rgb(67, 226, 43);
           margin-top: 60px;
+          text-decoration: none; /* Quita el subrayado */
           }
    
    .momento {
