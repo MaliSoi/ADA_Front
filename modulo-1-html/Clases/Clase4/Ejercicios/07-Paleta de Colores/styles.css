@@ -1,0 +1,63 @@
+body {
+    font-family: "Nunito Sans", serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el título h1 */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo para los títulos h2 */
+h2 {
+    font-size: 2rem;
+    text-align:left;
+    color: #333;
+    margin-left: 40px;
+}
+
+/* Estilo general para las listas de colores */
+ul {
+    list-style-type: none;
+   
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilo para los elementos de la lista */
+li.color {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Paleta Moderna (Hexadecimal) */
+.paleta-moderna .color {
+    font-size: 0.9rem;
+}
+
+/* Paleta RGB */
+.paleta-rgb .color {
+    font-size: 0.9rem;
+}
+
+/* Paleta HSL */
+.paleta-hsl .color {
+    font-size: 0.9rem;
+}
