@@ -1,0 +1,34 @@
+/* Fondo oscuro y texto claro */
+body.dark-theme {
+    background-color: #212121; /* Fondo oscuro */
+    color: #FAFAFA; /* Texto claro */
+    padding: 20px;
+    align-items: center;
+}   
+
+
+body {
+    font-family: 'Montserrat', serif;
+}
+
+.Titulo-principal {
+font-size: 7.5rem;
+font-weight: 800;
+}
+
+.p {
+    font-size: 3rem;
+font-weight: 600;
+}
+
+.color-1 {
+    color: #3396ff; /* Naranja */
+}
+
+.color-2 {
+    color: #ffcc33; /* Azul */
+}
+
+.color-3 {
+    color: #82e01a; /* Verde */
+}
