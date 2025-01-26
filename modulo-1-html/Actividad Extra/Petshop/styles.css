@@ -1,0 +1,100 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+nav .tema-pagina {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+  height: 30px;
+ }
+
+  .idioma {
+    margin-left: 20px;
+  }
+
+   .moneda {
+    margin-left: 20px;
+  }
+
+  .header-content {
+    display: flex;                  /* Flexbox para alinear logo y menú en una fila */
+    align-items: flex-start;
+    background-color: #f0a73e;
+    padding-bottom:20px ;
+    height: 80px;
+  }
+
+  ul {
+    color: white;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex;    /* Hace que los elementos estén en línea */
+    padding-left:1%;
+    margin: 0;
+
+}
+
+.tema-pagina, .header-content {
+    padding: 0;
+    margin: 0;  /* Elimina los márgenes */
+ }
+
+h1{
+    color: #412c1e;
+    text-align: center;
+    font-size: 180%
+}
+
+ .Imagen_grande {
+    width: 100%;
+    object-fit: cover;  /* Cubre el área sin distorsionar la imagen */
+  }
+
+  .contenedor-imagen {
+    position: relative; /* Necesario para posicionar los títulos sobre la imagen */
+  }
+
+  .subtitulo {
+    position: absolute;
+    top: 30%; /* Ajusta la distancia desde el borde superior de la imagen */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar completamente */
+    color: #412c1e; /* Asegura que el texto sea visible */
+    text-align: center;
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .Uppercase-subtitulo {
+    position: absolute;
+    top: 38%; /* Ajusta la distancia desde el borde superior, diferente del primero */
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Centra el texto vertical y horizontalmente */
+    color: white;
+    background-color: #f0a73e;
+    text-align: center;
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    font-weight: lighter;
+    
+  }
+
+  .encabezado-productos {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    display: flex; /* Usamos flexbox para centrar los elementos */
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px; /* Agrega un poco de espacio alrededor */
+  }
+
+  .Productos-destacados{
+    font-size: 200%;
+    color: #412c1e;
+}
+  
+.texto-categorias{
+    color: grey;
+}
+
+.producto-1, .{
+    color: #412c1e;
+    font-weight: bold;
+}
