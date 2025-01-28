@@ -39,7 +39,7 @@ nav .tema-pagina {
  }
 
 h1{
-    color: #412c1e;
+    color:#593924;
     text-align: center;
     font-size: 180%
 }
@@ -58,7 +58,7 @@ h1{
     top: 30%; /* Ajusta la distancia desde el borde superior de la imagen */
     left: 50%; /* Centra el texto horizontalmente */
     transform: translateX(-50%); /* Ajusta para centrar completamente */
-    color: #412c1e; /* Asegura que el texto sea visible */
+    color: #593924; /* Asegura que el texto sea visible */
     text-align: center;
     font-size: 1rem; /* Ajusta el tamaño de la fuente */
   }
@@ -87,14 +87,88 @@ h1{
 
   .Productos-destacados{
     font-size: 200%;
-    color: #412c1e;
+    color: #593924;
 }
   
 .texto-categorias{
     color: grey;
 }
 
-.producto-1, .{
-    color: #412c1e;
+.producto-1 {
+    color:#593924; 
     font-weight: bold;
+}
+
+.producto-1 h3 {
+  margin-bottom: 0; /* Elimina el margen inferior del h3 */
+}
+
+.producto-2 {
+  color:#593924; 
+  font-weight: bold;
+}
+
+.producto-2 h3 {
+  margin-bottom: 0; /* Elimina el margen inferior del h3 */
+}
+
+.producto-3 {
+  color:#593924; 
+  font-weight: bold;
+  
+}
+
+.producto-3 h3 {
+  margin-bottom: 0; /* Elimina el margen inferior del h3 */
+}
+
+.precio{
+  color: #f0a73e;
+  font-weight: bold; 
+}
+
+.suscribete p {
+  margin-left: 20px;
+}
+
+
+.contenedor-localidad, .contenedor-telefono, .contenedor-mail {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen arriba y el texto debajo */
+  align-items: left; /* Centra todo horizontalmente dentro del contenedor */
+  gap: 10px; /* Espacio entre la imagen y el texto */
+  
+}
+.logo-localidad, .logo-telefono, .logo-correo {
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: auto;
+}
+
+.texto-localidad, .texto-telefono, .texto-mail {
+  display: flex;
+  flex-direction: row; /* Alinea el título y la descripción en una fila */
+  align-items: center; /* Centra el texto verticalmente */
+  gap: 5px; /* Espacio entre el título y la descripción */
+}
+
+
+.localidad-descripcion, .teléfono-descripcion, .mail-descripcion {
+  font-size: smaller;
+  
+}
+
+.contenedor-footer{
+  color: white;
+  background-color:#3c2313;
+  display: flex;
+  flex-direction: column; /* Alinea los elementos del footer en columnas */
+  align-items: flex-start; /* Alinea los contenedores al margen izquierdo */
+  padding-left: 20px; /* Separación de 20px desde el margen izquierdo */
+}
+
+.derechos-reservados{
+  color: white;
+  background-color:#000000;
+  font-size: smaller;
+  text-align: center;
 }
