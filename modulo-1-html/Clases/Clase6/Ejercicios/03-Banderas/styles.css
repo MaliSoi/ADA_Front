@@ -1,0 +1,335 @@
+
+
+
+
+ /* Reset básico */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración del body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantiene el footer abajo */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Contenedor principal */
+main {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra la galería */
+    padding: 20px;
+}
+
+ /* Contenedor de banderas */
+.flags-gallery {
+    display: flex;
+    flex-direction: column; /* Apila las banderas en columna */
+    align-items: center; /* Centra todo */
+    gap: 30px; /* Espacio entre banderas */
+    width: 100%;
+    max-width: 800px; /* Evita que se estire demasiado */
+}
+
+/* Contenedor individual de cada bandera */
+.flag-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px; /* Espacio entre banderas */
+}
+
+/* Título de cada bandera */
+.flag-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px; /* Espacio entre el título y la bandera */
+}
+
+/* Estilos de la bandera (1) */
+.flag-england-1 {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border: 0px solid black;
+}
+.cross-horizontal-1 {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(215, 8, 8);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.cross-vertical-1 {
+    width: 40px;
+    height: 100%;
+    background-color:  rgb(215, 8, 8);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* Bandera cuadrada (2) */
+.flag-england-square {
+    width: 300px; /* Tamaño cuadrado */
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border: 0px solid black;
+}
+
+/* Cruz horizontal */
+.cross-horizontal-square {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Grosor ajustado */
+    background-color: rgb(215, 8, 8);
+    transform: translateY(-50%);
+}
+
+/* Cruz vertical */
+.cross-vertical-square {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px; /* Grosor ajustado */
+    height: 100%;
+    background-color: rgb(215, 8, 8);
+    transform: translateX(-50%);
+}
+
+
+/* Bandera redondeada (3) */
+.flag-england-round {
+    width: 300px; /* Tamaño cuadrado */
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border: 0px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Cruz horizontal */
+.cross-horizontal-round {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Grosor ajustado */
+    background-color: rgb(215, 8, 8);
+    transform: translateY(-50%);
+    
+}
+
+/* Cruz vertical */
+.cross-vertical-round {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px; /* Grosor ajustado */
+    height: 100%;
+    background-color: rgb(215, 8, 8);
+    transform: translateX(-50%);
+    
+}
+
+
+/* Bandera wave con img (4) */
+.flag-england-wave {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border: 0px solid black;
+    overflow: hidden;
+}
+
+.flag-england-wave img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+}
+
+/* Bandera wave con img (5) */
+.flag-england-waving {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    border: 0px solid black;
+    overflow: hidden;
+}
+
+.flag-england-waving img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+}
+
+/* Bandera 6 */
+.flag-england-button-square {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border: 20px solid rgb(218, 217, 217, 0.5); /* Borde con transparencia */
+    border-radius: 30px;
+}
+
+.cross-horizontal-button-square {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(215, 8, 8); /* Rojo sin transparencia */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.cross-vertical-button-square {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(215, 8, 8); /* Rojo sin transparencia */
+    transform: translateX(-50%);
+    z-index: 1;
+}
+/* Bandera 7 */
+.flag-england-button-round {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border: 20px solid rgb(218, 217, 217, 0.5); /* Borde con transparencia */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cross-horizontal-button-round {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(215, 8, 8); 
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.cross-vertical-button-round {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(215, 8, 8); 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Estilos de la bandera (8) */
+.flag-england-3D {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    border: 3px solid rgba(142, 140, 140, 0.3);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra interna */
+    filter:drop-shadow(3px); /* Difuminado de la sombra */
+}
+
+
+.cross-horizontal-3D {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(215, 8, 8);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.cross-vertical-3D{
+    width: 40px;
+    height: 100%;
+    background-color:  rgb(215, 8, 8);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* Estilos de la bandera (9) */
+/* Bandera 7 */
+.flag-england-3D-round {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border: 3px solid rgba(142, 140, 140, 0.3);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra interna */
+    filter:drop-shadow(3px); /* Difuminado de la sombra */
+}
+
+.cross-horizontal-3D-round {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(215, 8, 8); 
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.cross-vertical-3D-round {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: rgb(215, 8, 8); 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    margin: 80px 0px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
