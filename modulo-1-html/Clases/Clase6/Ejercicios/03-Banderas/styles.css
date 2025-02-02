@@ -283,7 +283,7 @@ main {
 }
 
 /* Estilos de la bandera (9) */
-/* Bandera 7 */
+
 .flag-england-3D-round {
     width: 300px;
     height: 300px;
@@ -317,13 +317,6 @@ main {
     transform: translateX(-50%);
     z-index: 1;
 }
-
-
-
-
-
-
-
 
 
 /* Footer */

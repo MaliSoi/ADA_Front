@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+   
+
+
+}
+/* Tarjeta de producto */
+.product-card {
+    width: 450px;
+    height: fit-content;
+    background: #0b1622;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Aumentamos el difuminado y opacidad */
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Encabezado con imagen */
+.product-header {
+    background: #27c0bb;
+    padding: 20px;
+}
+
+.product-header img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.product-header img {
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Título */
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.description {
+    font-size: 13px;
+}
+
+.description, .p{
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+/* Etiquetas */
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tags span {
+    background: transparent;
+    border: 1px solid #1e9995;
+    color:  #ece5e5;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 8px;
+}
+
+/* Precio */
+.h4 {
+    font-size: 12px;
+    font-weight: normal;  
+}
+.price{
+ font-size: 26px;
+    font-weight: normal;
+    text-align: center;  
+}
+
+/* Botón */
+.buy-button {
+    background:#27c0bb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 40%;
+    
+    margin-bottom: 15px;
+}
+
+.buy-button:hover {
+    background: #1d8e8a;
+}
