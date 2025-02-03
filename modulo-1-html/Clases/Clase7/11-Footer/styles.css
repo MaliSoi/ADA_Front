@@ -1,0 +1,141 @@
+/* Estilos para la columna del logo */
+.logo-column {
+    flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+
+
+
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+
+  /* Estilos generales del footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+
+    
+}
+
+/* Estilos para el contenedor del footer */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: flex-start; /* Alineamos los elementos al inicio del contenedor */
+    flex-direction:row ;
+    flex-grow: initial;
+
+/* Estilos para las secciones */
+section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+    }
+
+
+
+/* Estilos para el logo y copyright */
+
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+/* Estilos para los títulos de sección */
+h3 {
+    font-size: 1rem;
+    color:  #666;
+    margin-top: 10px;
+}
+
+/* Estilos para las listas y enlaces */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: hsl(0, 0%, 40%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Estilos para la sección legal */
+#legal  {
+    flex: 1 1 100%; /* Ocupa todo el ancho */
+    padding: 10px 0; /* Espacio vertical */
+    display: flex;                  /* Flexbox para alinear logo y menú en una fila */
+    
+    
+}
+
+#legal .container {
+    display: flex; /* Habilita flexbox en el contenedor */
+    justify-content:space-evenly; /* Centra los elementos horizontalmente */
+    align-items:flex-end; /* Alinea los elementos a la línea base */
+    /* Otras propiedades opcionales */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px; /* Espacio alrededor del contenido */
+    
+
+    }
+
+
+#legal nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Alinea los elementos de la lista horizontalmente */
+    flex-direction: row; /* Esta línea es la clave */
+    text-align: center;
+    
+}
+
+/* Estilos para los iconos de redes sociales */
+#legal nav ul li a img {
+    width: 20px; /* Ajusta el tamaño de los iconos */
+    height: 20px;
+    margin: 0 5px; /* Espacio entre los iconos */
+}
+
+#legal nav li {
+    margin: 0 10px; /* Espacio entre elementos de la lista */
+    
+}
+
+#legal nav p {
+    margin: auto; /* Empuja el párrafo de copyright hacia la izquierda */
+   
+}

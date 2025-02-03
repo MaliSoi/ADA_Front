@@ -1,0 +1,71 @@
+body{
+    font-family: "Roboto", serif;
+}
+
+table {
+    width: 30%; /* Reducimos el ancho de la tabla (puedes ajustarlo) */
+    margin: 20px auto; /* Centramos la tabla horizontalmente */
+    border-collapse: collapse;
+    text-align: center;
+    justify-content:flex-start
+    display: flexbox;
+    }
+.elemento {
+    font-size: 1.6rem; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+}
+
+/* Estilos para celdas específicas */
+.no-element {
+    background-image: linear-gradient(to right, #ebebeb, #cdcdcd); /* Degradado vertical */
+}
+
+.alkali {
+    background-image: linear-gradient(to right, #e8f0c9, #d3e782);
+}
+
+.alkali-n {
+    background-image: linear-gradient(to right,#e8f0c9, #e5e782);
+}
+.alkaline-earth {
+    background-image: linear-gradient(to right, #e6c850, #d4ab06);
+}
+
+.transition {
+    background-image: linear-gradient(to right, #dfd929, #c1be06);
+}
+
+.carbon {
+    background-image: linear-gradient(to right, #79d54b, #4a9428);
+}
+
+.nitrogen {
+    background-image: linear-gradient(to right, #64c14f, #54b043);
+}
+
+.oxygen {
+    background-image: linear-gradient(to right, #51b66a, #41a55e);
+}
+
+.halogen {
+    background-image: linear-gradient(to right, #61bebe, #42a4a4);
+    
+}
+
+.noble {
+    background-image: linear-gradient(to right, #77a7d6, #5786b4);
+    
+}
+
+/* Estilos para números atómicos y pesos */
+td br {
+    display: block; /* Permite que los números y pesos estén en líneas separadas */
+    margin: 5px 0;
+}
+
