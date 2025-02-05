@@ -139,3 +139,23 @@ a:hover {
     margin: auto; /* Empuja el párrafo de copyright hacia la izquierda */
    
 }
+
+.pie-de-footer{
+    display: flex;
+    justify-content: baseline;
+    border: solid 1px rgb(208, 1, 184);
+    gap: 10rem;
+    }
+
+.info{
+    display: flex;
+    justify-content: baseline;
+    border: solid 1px black;
+
+    }
+
+.redes{
+     display: flex;
+    justify-content: baseline;
+    border: solid 1px black;
+    }

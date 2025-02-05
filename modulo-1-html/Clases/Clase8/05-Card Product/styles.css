@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 2%;   
+}
+
+/* Tarjeta de producto */
+.product-card {
+    width: 800px; /* Más ancho para formato horizontal */
+    max-width: 90%; 
+    background: #0b1622;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Aumentamos el difuminado y opacidad */
+    text-align: left;
+    color: white;
+    display: flex; /* Para formato horizontal en escritorio */
+    flex-direction: row;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: stretch; /* 🔹 Asegura que ambos lados tengan la misma altura */
+}
+
+/* Imagen */
+.product-header {
+    background: #27c0bb;
+    flex: 1; /* Ocupa la mitad en escritorio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto; 
+    
+}
+
+.product-header img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Contenido */
+.product-details {
+    flex: 1; /* Ocupa la otra mitad */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Título */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Descripción */
+.description {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.description, .p{
+    font-size: 12px;
+    margin: 0;
+   }
+
+/* Etiquetas */
+.tags {
+    display: flex;
+    flex-wrap: wrap; /* Para evitar desbordes */
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tags span {
+    background: transparent;
+    border: 1px solid #1e9995;
+    color:  #ece5e5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+/* Precio */
+.price-section h4 {
+    font-size: 14px;
+    font-weight: normal; 
+     
+}
+
+.price{
+ font-size: 28px;
+    font-weight: normal;
+    text-align: left;  
+}
+
+/* Botón */
+.buy-button {
+    background:#27c0bb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.buy-button:hover {
+    background: #1d8e8a;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column; /* En móviles, formato vertical */
+        width: 90%; /* Se adapta mejor a la pantalla */
+        max-width: 400px; /* Un poco más grande en móvil */
+    }
+
+    .product-header {
+        flex: none;
+        padding: 15px;
+    }
+
+    .product-header img {
+        max-width: 100%; /* Mantiene un tamaño proporcional */
+        height: auto; /* Evita deformaciones */
+    }
+
+    .product-details {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .tags {
+        justify-content: center;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .buy-button {
+        width: 80%;
+    }
+}
