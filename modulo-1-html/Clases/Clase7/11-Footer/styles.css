@@ -41,7 +41,7 @@ footer {
     align-items: flex-start; /* Alineamos los elementos al inicio del contenedor */
     flex-direction:row ;
     flex-grow: initial;
-
+}
 /* Estilos para las secciones */
 section {
     flex: 1 1 200px;

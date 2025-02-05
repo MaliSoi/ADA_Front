@@ -1,0 +1,131 @@
+/* Establecer tipografía de Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Centrar título principal */
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Centrar título secundario y párrafo */
+.products h2, .products p {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+/* Grilla de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 20px; /* Espaciado entre las cards */
+    max-width: 1200px; /* Ancho máximo de la grilla */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card de producto */
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Efecto hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Breakpoint para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    /* 2 productos por fila en pantallas medianas */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* La imagen va arriba de la información en pantallas medianas */
+    .product-card img {
+        margin-bottom: 15px;
+    }
+}
+
+/* Breakpoint para pantallas aún más pequeñas */
+@media (max-width: 768px) {
+    /* 1 producto por fila en pantallas más pequeñas */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Imagen a la izquierda de la información del producto */
+    .product-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product-card img {
+        max-width: 40%; /* Imagen ocupa el 40% del espacio */
+        margin-right: 20px;
+    }
+
+    .product-card h3, .product-card p {
+        text-align: left;
+        margin-top: 0%;
+        
+    }
+
+     /* Títulos y párrafos alineados a la izquierda */
+     header h1, .products h2 {
+        text-align: left;
+        margin: 4%;
+       
+    }
+}
+
+/* Breakpoint para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    /* Imagen más pequeña a la izquierda y más espacio para el texto */
+    .product-card img {
+        max-width: 35%; /* Imagen ocupa el 35% del espacio */
+    }
+
+    /* Reducir font-size global en pantallas pequeñas */
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Modificar el font-size global cuando la resolución se reduce */
+@media (max-width: 360px) {
+    /* Reducir aún más el tamaño de la fuente en pantallas muy pequeñas */
+    body {
+        font-size: 12px;
+    }
+}
