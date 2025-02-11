@@ -36,13 +36,16 @@ body {
     align-items: center;
     padding: 20px;
     height: auto; 
+   
     
 }
 
 .product-header img {
     width: 100%;
-    max-width: 300px;
+    max-width: rem;
     height: auto;
+    border: solid 1px black;
+    display: block;
 }
 
 /* Contenido */

@@ -1,0 +1,189 @@
+
+*{
+    width: 100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: "Liter", serif;
+    line-height: 1.6;
+    max-width: 100vw; /* Evitar que la página se salga del ancho de la ventana */
+    overflow-x: hidden; /* Evitar desbordes horizontales */
+    
+}
+
+.inicio{
+    width: 100%;
+    text-align:center ; 
+    background-color: black; 
+    padding: 20px;
+    
+ }
+
+header {
+    display: flex;
+    flex-direction: column ;
+    padding: 0 10px;
+    align-items:center;
+    color: white;
+    width: 100%; /* Asegura que el header tenga el 100% del ancho */
+ }
+ 
+
+.titulo {
+    padding: 2%;
+    font-size: 2rem;  
+    border: solid 1px white; 
+ }      
+        
+
+.menu {
+    
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: solid 1px white;
+    justify-content: space-around; /* Para distribuir los elementos de forma equitativa */
+    
+}
+
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+    padding:10px;
+    border-right: solid 1px white;
+    
+}
+
+.menu li:last-child{
+    border-right: none;
+}
+
+.image-banner {
+    position: relative; /* Contenedor relativo para posicionar el texto */
+    width: 100%;
+    height: 250px; /* Ajusta según necesites */
+    overflow: hidden;
+    }
+   
+
+.image-banner img {
+    width: 100%;
+    height: auto; /* Ajusta este valor según lo que necesites */
+    object-fit:cover; /* Recorta la imagen si es necesario */
+    
+    }
+
+  .intro{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.50rem;
+    position: absolute;
+    top: 50%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste fino para el centro exacto */
+    background: rgba(66, 66, 66, 0.3); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    
+  }  
+
+  .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (150px,1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  footer{
+    text-align: center;
+    padding: 1rem;
+    background: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+  }
+
+/* Grilla de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 productos por fila */
+    gap: 20px; /* Espaciado entre las cards */
+    width: 100%; /* Ancho máximo de la grilla */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+/* Card de producto */
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; 
+
+}
+
+/* Breakpoint para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    /* 2 productos por fila en pantallas medianas */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column; /* Cambiar la dirección de la lista para que sea vertical */
+    }
+    
+    .image-banner img {
+        height: 300px; /* Reducir la altura de la imagen */
+        object-position: center top; /* Ajustar la posición */
+    }
+/* En el intro, ajustar tamaño de texto */
+    .intro {
+    font-size: 1.2rem;
+}
+
+}  
+
+
+  @media (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    .intro{
+        font-size: 2rem;
+    }
+    /* 1 producto por fila en pantallas más pequeñas */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+  }
+
