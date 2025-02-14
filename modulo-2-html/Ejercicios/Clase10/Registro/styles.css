@@ -1,0 +1,210 @@
+
+body{
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(130, 0, 63,0.9), rgba(237, 79, 195,0.8)), url('./Images/scott-graham-5fNmWej4tAA-unsplash.jpg') no-repeat center center;
+    margin: 0;
+    position: relative;
+}
+
+main {
+    display:flex;
+    width: 60%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow:visible;
+    margin: 20px;
+    height: auto;
+    
+}
+
+.initial-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente dentro del espacio */
+        padding: 30% 0%;
+    }
+    
+.left-panel, .right-panel {
+    padding: 20px;
+}
+
+.left-panel{
+    flex: 1;
+    background: rgba(130, 0, 72, 0.3);
+    color: white;
+    flex-direction: column;
+    padding: 28px; /* Ajusta según sea necesario */
+    display: block;
+}
+
+.left-panel h2 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.right-panel{
+    flex: 2;
+    background: white;    
+}
+
+
+ .right-panel h2{
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3rem;
+ }
+
+ .right-panel p{
+    font-size: 0.8rem;
+    font-weight: 200;
+ }
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier padding */
+}
+
+h1 span{
+    font-size: 3.5rem;   
+}
+
+
+.initial-text p {
+    margin-top: 0; /* Reduce el espacio arriba del párrafo */
+    margin-bottom: 30px; /* Reduce el espacio debajo del párrafo */
+    font-size: 0.8rem;
+    font-weight: 200;   
+}
+
+
+.signup-here{
+    color: #f3f3f3; 
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: block; /* Asegura que ocupe toda la línea */
+    text-align: right; /* Lo alinea a la derecha */
+    margin-right: 20px;
+    
+}
+
+.signup-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+ 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+legend {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 20px; /* Añade un margen para que se separe de los campos */
+    margin-left: 4px;
+    color: #ed4fc3;
+}
+
+
+.input-group {
+    display: block;
+    width: 100%;
+    gap: 10px;
+    border:solid 2px yellow;
+    margin-bottom: 15px; /* Añade espacio debajo de cada campo */
+    padding: 5px;
+}
+
+input[type="email"],
+input[type="tel"] {
+    
+    width: 100%; /* Hace que los campos ocupen todo el ancho disponible */
+    
+}
+
+input, select, button {
+    margin: 5px 5px;
+    border: 1px solid #d8d7d7;
+    border-radius: 3px;
+   
+}
+
+
+button{
+    padding: 12px;
+    background: linear-gradient(to right, #82003f, #ed4fc3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+button:hover{
+    border: #e84e2b;
+}
+
+label {
+    font-size: 0.6rem;  /* Hace el texto más pequeño */
+    font-weight: 400;
+    display: flex;
+    align-items: center; /* Alinea el texto con el checkbox */
+    
+}
+
+label a, .account  {
+    font-size: 0.8rem;  /* Mantén el mismo tamaño que el texto */
+    font-weight: 400;
+    color: #ed4fc3;      /* Color del enlace (puedes cambiarlo) */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+label a:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor */
+}
+
+
+
+input::placeholder {
+    font-size: 0.7rem;  /* Ajusta el tamaño del texto */
+    font-weight: 600; /* Establece el peso de la fuente */
+    color: #666;     /* Ajusta el color del texto */
+    opacity: 1;      /* Asegura que el texto del placeholder no esté transparente */
+}
+
+select {
+    font-size: 0.7rem;  /* Asegura que el tamaño del texto sea consistente */
+    font-weight: 600; /* Ajusta el peso de la fuente */
+    color: #666;     /* Ajusta el color del texto */
+}
+
+/* Estilo para las opciones dentro del <select> */
+select option {
+    font-size: 0.7rem;  /* Ajusta el tamaño del texto de las opciones */
+    font-weight: 600; /* Ajusta el peso de la fuente */
+    color: #666;     /* Ajusta el color del texto de las opciones */
+}
+
+.email, .tel{
+
+    width:70%;
+}
