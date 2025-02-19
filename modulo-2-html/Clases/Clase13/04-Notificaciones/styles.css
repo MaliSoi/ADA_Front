@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Azul */
+    padding: 15px;
+}
+
+.menu i {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+
+}
+
+.icon {
+    width: 50px;  /* Ancho del contenedor */
+    height: 50px; /* Alto del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon i {
+    font-size: 40px;
+    color: white;
+}
+
+.badge {
+    position: absolute;
+    top: 1px;
+    right: -3px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.more i {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+
+}
+
+.green-bar {
+    background-color: #1abc9c; /* Verde */
+    height: 70px;
+}
