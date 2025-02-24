@@ -1,0 +1,99 @@
+body{
+    display:flex;
+    justify-content: center;
+    background-color: #3b3b3b;
+    margin: 20%;
+    font-family: "Arsenal SC", serif;
+}
+
+.effect-lily{
+    position: relative;
+    overflow: hidden;
+    width: 320px;
+    height: 300px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
+
+.effect-lily img{
+    display: block;
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.effect-lily:hover img{
+    transform: translateX(10px);
+}
+ 
+.effect-lily .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa oscura */
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Transición suave en ambos sentidos */
+    transition-delay: 0.3s; /* Espera antes de desvanecerse */
+    z-index: 1;
+}
+
+.effect-lily:hover .overlay {
+   opacity: 0;
+   transition-delay: 0s; /* Sin delay al desvanecerse */
+    
+}
+
+.effect-lily figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+   z-index: 2;
+}
+
+
+.effect-lily h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 0;
+    color: #fff;
+    line-height: 0;
+    text-align: left;
+    transform: translateY(-20px);
+}
+
+.effect-lily:hover h2{
+    transform: translateY(-18px);
+    transition: transform 0.4s ease
+
+}
+
+.effect-lily h2 span {
+    font-weight: bold;
+    display: inline;
+    text-align: left;
+}
+
+.effect-lily p {
+    font-size: 24px;
+    font-weight:normal;
+    transform: translateY(50px); 
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+   
+}
+
+.effect-lily:hover p {
+    transform: translateY(-20px); /* Sube al hover */
+    opacity: 1;
+    transition: 0.5s;
+}
+
