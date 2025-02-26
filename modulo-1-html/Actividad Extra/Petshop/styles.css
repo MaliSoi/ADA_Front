@@ -37,31 +37,48 @@ body{
   margin-left: 50px; /* Ajusta el espacio entre los elementos */
   margin-top: -30px; /* Ajusta la posición vertical */
 }
-
-  .header-content {
-    display: flex;                  /* Flexbox para alinear logo y menú en una fila */
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0a73e;
-    padding-left: 50px !important;
-    box-sizing: border-box;
-    height: 80px;
-    
-  }
+.header-content {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+background-color: #f0a73e;
+padding-left: 50px !important;
+box-sizing: border-box;
+height: 80px;
 
   
-  
+}
+
+.logo {
+  position: relative;
+  z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+  right: 50%; /* Ajusta el margen si quieres separación entre el logo y otros elementos */
+  bottom: 86%;
+}
+
 
   ul {
     color: white;
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex;    /* Hace que los elementos estén en línea */
-    gap: 50px;        /* Espacio entre los ítems del menú */
-    margin-right: 50px; /* Separa el menú del borde derecho */
-    padding-left: 0; /* Resetea el padding para un mejor control */
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+    padding-left: 0;
     font-size: larger;
-   
+    align-items: center;  /* Asegura que los elementos estén centrados verticalmente */
     }
+
+    li {
+      display: flex;
+      align-items: center;  /* Alinea los íconos y texto en el centro */
+      justify-content: flex-end;
+    }
+
+    .icono {
+      margin-right: 8px;  /* Añade un pequeño espacio entre el icono y el texto */
+    }
+
+    
 
  .Imagen_grande {
     width: 100%;
@@ -348,9 +365,10 @@ button {
 }
 
 .contenedor-textos {
+  margin-top: -1%;
   display: flex;
   flex-direction: column;
-  
+  gap: 16px;
 }
 
 .logo-localidad, .logo-telefono, .logo-correo {
@@ -362,13 +380,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2px; /* Reduce el espacio entre el título y la descripción */
+   
 }
 
 .localidad-descripcion, .teléfono-descripcion, .mail-descripcion {
   font-size: smaller;
   margin-top: 0; /* Elimina cualquier margen superior extra */
-  line-height: 1; /* Reduce el espacio entre las líneas de texto */
+  line-height: 0.2;
   
 }
 
