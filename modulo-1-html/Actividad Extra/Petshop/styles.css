@@ -1,48 +1,67 @@
+
+
 body{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-nav .tema-pagina {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
+ .tema-pagina  {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
   height: 30px;
+  justify-content: space-between;
+  font-size: smaller;
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  padding-left: 50px !important;
+  box-sizing: border-box;
+ 
+  
  }
 
-  .idioma {
-    margin-left: 20px;
-  }
+ .moneda-idioma {
+  font-size: smaller;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos al final */
+  padding-right: 50px;
+  box-sizing: border-box;
+}
 
-   .moneda {
-    margin-left: 20px;
-  }
+.idioma,
+.moneda {
+  margin-left: 50px; /* Ajusta el espacio entre los elementos */
+  margin-top: -30px; /* Ajusta la posición vertical */
+}
 
   .header-content {
     display: flex;                  /* Flexbox para alinear logo y menú en una fila */
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     background-color: #f0a73e;
-    padding-bottom:20px ;
+    padding-left: 50px !important;
+    box-sizing: border-box;
     height: 80px;
+    
   }
+
+  
+  
 
   ul {
     color: white;
     list-style: none; /* Elimina los puntos de la lista */
     display: flex;    /* Hace que los elementos estén en línea */
-    padding-left:1%;
-    margin: 0;
-
-}
-
-.tema-pagina, .header-content {
-    padding: 0;
-    margin: 0;  /* Elimina los márgenes */
- }
-
-h1{
-    color:#593924;
-    text-align: center;
-    font-size: 180%
-}
+    gap: 50px;        /* Espacio entre los ítems del menú */
+    margin-right: 50px; /* Separa el menú del borde derecho */
+    padding-left: 0; /* Resetea el padding para un mejor control */
+    font-size: larger;
+   
+    }
 
  .Imagen_grande {
     width: 100%;
@@ -53,10 +72,28 @@ h1{
     position: relative; /* Necesario para posicionar los títulos sobre la imagen */
   }
 
+  h1, .subtitulo, .Uppercase-subtitulo {
+    position: absolute;
+    transform: translateX(-50%); /* Centra los textos horizontalmente */
+    
+  }
+
+  h1 {
+    top: 45%; /* Ajusta la distancia desde la parte superior para el h1 */
+    left: 75%;
+    font-size: 1.9rem; /* Ajusta el tamaño del h1 */
+    color: #593924;
+    font-weight: lighter;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    
+  }
+
   .subtitulo {
     position: absolute;
-    top: 30%; /* Ajusta la distancia desde el borde superior de la imagen */
-    left: 50%; /* Centra el texto horizontalmente */
+    top: 58%; /* Ajusta la distancia desde el borde superior de la imagen */
+    left: 75%; /* Centra el texto horizontalmente */
     transform: translateX(-50%); /* Ajusta para centrar completamente */
     color: #593924; /* Asegura que el texto sea visible */
     text-align: center;
@@ -65,16 +102,26 @@ h1{
 
   .Uppercase-subtitulo {
     position: absolute;
-    top: 38%; /* Ajusta la distancia desde el borde superior, diferente del primero */
-    left: 50%;
+    top: 68%; /* Ajusta la distancia desde el borde superior, diferente del primero */
+    left: 75%;
     transform: translateX(-50%) translateY(-50%); /* Centra el texto vertical y horizontalmente */
     color: white;
     background-color: #f0a73e;
+    padding: 10px;
+    border-radius: 8px;
     text-align: center;
     font-size: 1rem; /* Ajusta el tamaño de la fuente */
     font-weight: lighter;
     
   }
+
+  .Productos-destacados{
+    font-size: 200%;
+    color: #593924;
+}
+.texto-categorias{
+  color: grey;
+}
 
   .encabezado-productos {
     text-align: center; /* Centra el texto dentro del contenedor */
@@ -85,90 +132,250 @@ h1{
     padding: 20px; /* Agrega un poco de espacio alrededor */
   }
 
-  .Productos-destacados{
-    font-size: 200%;
-    color: #593924;
-}
-  
-.texto-categorias{
-    color: grey;
+  .productos {
+    display: flex; /* Usamos flexbox para poner las tarjetas en fila */
+    justify-content: center; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no caben en una fila */
+    gap: 10%;
+    margin-top: 20px; /* Asegura que haya espacio arriba de las tarjetas */
+  }
+
+.producto-1, .producto-2, .producto-3 {
+  background-color: #fafbf4;
+  border-radius: 10px;
+  width: 250px; /* Puedes ajustar el tamaño de las cards */
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.producto-1 {
-    color:#593924; 
-    font-weight: bold;
+.producto-1 img, .producto-2 img, .producto-3 img {
+  width: 100%; /* Hace que las imágenes se ajusten al ancho de la tarjeta */
+  height: auto;
+  border-radius: 5px;
 }
 
-.producto-1 h3 {
-  margin-bottom: 0; /* Elimina el margen inferior del h3 */
+.producto-1 h3, .producto-2 h3, .producto-3 h3 {
+  margin: 5px 0 2px;
+  font-size: 1.2rem;
 }
 
-.producto-2 {
-  color:#593924; 
+.producto-1 .precio, .producto-2 .precio, .producto-3 .precio {
+  font-size: 1.5rem;
+  color: #f0a73e; /* Color que resalte el precio */
   font-weight: bold;
 }
-
-.producto-2 h3 {
-  margin-bottom: 0; /* Elimina el margen inferior del h3 */
+ 
+/* Efecto de hover para las tarjetas */
+.producto-1:hover, .producto-2:hover, .producto-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.producto-3 {
-  color:#593924; 
-  font-weight: bold;
-  
+/* Estilos para la sección de contacto */
+#contactanos {
+  padding: 2rem;
+  text-align: center;
 }
 
-.producto-3 h3 {
-  margin-bottom: 0; /* Elimina el margen inferior del h3 */
-}
-
-.precio{
-  color: #f0a73e;
-  font-weight: bold; 
-}
-
-.suscribete p {
-  margin-left: 20px;
-}
-
-
-.contenedor-localidad, .contenedor-telefono, .contenedor-mail {
+form {
   display: flex;
-  flex-direction: column; /* Coloca la imagen arriba y el texto debajo */
-  align-items: left; /* Centra todo horizontalmente dentro del contenedor */
-  gap: 10px; /* Espacio entre la imagen y el texto */
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 1rem;
   
 }
+
+form input{
+  background-color: #593924;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 26px;
+  
+ 
+}
+
+input::placeholder {
+  color:white;
+  font-size: smaller;
+  
+}
+
+.form-buttons {
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  max-width: 400px;
+  
+  
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 26px;
+  
+}
+
+.reset-btn {
+  width: 150px;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+}
+
+.submit-btn {
+  width: 150px;
+  padding: 10px;
+  background-color: #f0a73e;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #d78a2d;
+}
+
+.reset-btn:hover {
+  background-color: rgb(102, 102, 102);
+ 
+}
+
+
+/* Estilos para la sección de suscripción */
+.suscribete {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra verticalmente */
+  padding: 2rem;
+  background-color: #f0a73e;
+}
+
+.suscribete-texto {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el icono y el texto */
+}
+
+.suscribete-texto p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.suscribete-icono img {
+  width: 40px; /* Ajusta el tamaño del icono */
+  height: auto;
+}
+
+
+.suscribete-form {
+  display: flex;
+  gap: 10px; /* Espacio entre el input y el botón */
+  align-items: center; /* Alinea verticalmente */
+}
+
+.suscribete-form input[type="email"] {
+  padding: 10px;
+  border-radius: 26px;
+  flex: 1; /* Hace que el input ocupe el espacio disponible */
+  min-width: 200px;
+  height: 40px; /* Ajuste de altura */
+  box-sizing: border-box; /* Asegura que el padding no cambie el tamaño total */
+ 
+
+}
+.suscribete-form input::placeholder {
+  color:rgb(157, 157, 157);
+  font-size: smaller;
+  text-align: center;
+  
+}
+
+
+
+.suscribirme-btn {
+  background-color: #593924;
+  color: white;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  height: 40px; /* Misma altura que el input */
+  line-height: 1; /* Alinea el texto verticalmente */
+  box-sizing: border-box;
+  
+}
+
+.suscribirme-btn:hover {
+  background-color: rgb(102, 102, 102);
+}
+
+.contenedor-footer {
+  color: white;
+  background-color: #3c2313;
+  display: flex;
+  flex-direction: row; /* Coloca las imágenes y los textos en fila */
+  align-items: flex-start;
+  gap: 20px; /* Espacio entre la columna de imágenes y la de texto */
+  padding: 30px;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espacio entre las imágenes */
+}
+
+.contenedor-textos {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .logo-localidad, .logo-telefono, .logo-correo {
-  width: 80px; /* Ajusta el tamaño del logo */
+  width: 60px;
   height: auto;
 }
 
 .texto-localidad, .texto-telefono, .texto-mail {
-  display: flex;
-  flex-direction: row; /* Alinea el título y la descripción en una fila */
-  align-items: center; /* Centra el texto verticalmente */
-  gap: 5px; /* Espacio entre el título y la descripción */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px; /* Reduce el espacio entre el título y la descripción */
 }
-
 
 .localidad-descripcion, .teléfono-descripcion, .mail-descripcion {
   font-size: smaller;
+  margin-top: 0; /* Elimina cualquier margen superior extra */
+  line-height: 1; /* Reduce el espacio entre las líneas de texto */
   
 }
 
-.contenedor-footer{
-  color: white;
-  background-color:#3c2313;
-  display: flex;
-  flex-direction: column; /* Alinea los elementos del footer en columnas */
-  align-items: flex-start; /* Alinea los contenedores al margen izquierdo */
-  padding-left: 20px; /* Separación de 20px desde el margen izquierdo */
+.logo {
+  margin-top: 10%;
+  margin-left: 50%;
+  height: 30px; /* Ajusta la altura del logo */
 }
 
-.derechos-reservados{
-  color: white;
-  background-color:#000000;
-  font-size: smaller;
-  text-align: center;
-}
+

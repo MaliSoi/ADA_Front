@@ -9,16 +9,20 @@
 </head>
 <body>
     
+  <body>
     <nav>
-    <p class="tema-pagina">Grandes ofertas en comederos 
-    <span class="idioma">Español<img src="Images/images/vi+¦eta.png" alt="flecha"></span> 
-    <span class="moneda">$ARG<img src="Images/images/vi+¦eta.png" alt="flecha"></span></p>
-   
-    <div class="header-content">
-    <img src="Images/images/LogoCabecera.png" alt="Logo Cabecera" class="logo">
-
-    <ul>
-        <li>
+      <div class="tema-pagina">
+        Grandes ofertas en Comederos
+      </div>
+      <div class="moneda-idioma">
+        <span class="idioma">Español<img src="Images/images/vi+¦eta.png" alt="flecha"></span> 
+        <span class="moneda">$ARG<img src="Images/images/vi+¦eta.png" alt="flecha"></span>
+      </div>
+      <div class="header-content">
+        <img src="Images/images/LogoCabecera.png" alt="Logo Cabecera" class="logo">
+  
+        <ul>
+          <li>
             <img src="Images/images/huellaChica.png" alt="Categorias" class="icono">
             <span>Categorías</span>
           </li>
@@ -34,10 +38,9 @@
             <img src="Images/images/huellaChica.png" alt="Contactanos" class="icono">
             <span>Contactanos</span>
           </li>
- 
-    </ul>
-</div>
-</nav>
+        </ul>
+      </div>
+    </nav>
 
 <h1 class="Titulo-principal">¡Es un placer tenerte aquí!</h1>
 
@@ -49,81 +52,104 @@
 <h3 class="Uppercase-subtitulo">COMEDEROS</h3>
 </div>
 
-<br>
-<br>
+<section class="encabezado-productos">
+  <img src="Images/images/huellaGrande.png" alt="huella-Grande" class="huella-Grande">
+  <h2 class="Productos-destacados">Productos Destacados</h2>
+  <p class="texto-categorias">Comederos - Accesorios - Comida</p>
+</section>
+
+
+
 <section class="productos">
 
-<div class="encabezado-productos">
-<img src="Images/images/huellaGrande.png" alt="huella-Grande" class="huella-Grande">
+  <div class="producto-1">
+    <img src="Images/images/churrasquito.png" alt="Juguete-churrasquito" class="Juguete-churrasquito">
+    <h3>Juguete Churrasquito</h3>
+    <span class="precio">$150</span>
+  </div>
 
-<h2 class="Productos-destacados">Productos Destacados</h2>
-<p class="texto-categorias">Comederos - Accesorios - Comida</p>
-</div>
+  <div class="producto-2">
+    <img src="Images/images/comedero.png" alt="Comedero-para-perro" class="Comedero-para-perro">
+    <h3>Comedero para perro</h3>
+    <span class="precio">$250</span>
+  </div>
 
-<div class="producto-1">
-<img src="Images/images/churrasquito.png" alt="Juguete-churrasquito" class="Juguete-churrasquito">
-<h3>Juguete Churrasquito</h3>
-<span class="precio">$150</span>
-</div>
-
-<div class="producto-2">
-<img src="Images/images/comedero.png" alt="Comedero-para-perro" class="Comedero-para-perro">
-<h3>Comedero para perro</h3>
-<span class="precio">$250</span>
-</div>
-
-<div class="producto-3">
-<img src="Images/images/Huesito.png" alt="Juguete-huesito" class="Juguete-huesito">
-<h3>Juguete Huesito</h3>
-<span class="precio">$650</span>
-</div>
+  <div class="producto-3">
+    <img src="Images/images/Huesito.png" alt="Juguete-huesito" class="Juguete-huesito">
+    <h3>Juguete Huesito</h3>
+    <span class="precio">$650</span>
+  </div>
 
 </section>
+
 
 <section id="contactanos">
   <h2>Contáctanos</h2>
-  
+  <form action="#">
+    
+    <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Nombre y Apellido" required>
+
+    
+    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+
+   
+    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+
+    <div class="form-buttons">
+      <button type="reset" class="reset-btn">Resetear</button>
+      <button type="submit" class="submit-btn">Enviar</button>
+    </div>
+  </form>
 </section>
 
+
 <section class="suscribete">
-  <p>Suscríbete para más novedades</p>
-  
+  <div class="suscribete-texto">
+    <div class="suscribete-icono">
+      <img src="./Images/images/enviar-correo.png" alt="icono de suscripción">
+    </div>
+    <p>Suscríbete para más novedades</p>
+  </div>
+
+  <div class="suscribete-form">
+    <input type="email"id="correo" name="correo"placeholder="Ingresa tu correo electrónico" required>
+    <button class="suscribirme-btn">Suscribirme</button>
+  </div>
 </section>
 
 <footer>
-
   <section class="contenedor-footer">
-  <div class="contenedor-localidad">
-    <img src="Images/images/logoUbicacion.png" alt="logo-localidad" class="logo-localidad">
-    <div class="texto-localidad">
-      <h2 class="localidad">Localidad</h2>
-      <p class="localidad-descripcion">Calle - Provincia</p>
+    
+    <!-- Columna de Imágenes -->
+    <div class="contenedor-imagenes">
+      <img src="Images/images/logoUbicacion.png" alt="logo-localidad" class="logo-localidad">
+      <img src="Images/images/logoTelefono.png" alt="logo-telefono" class="logo-telefono">
+      <img src="Images/images/logoCorreo.png" alt="logo-correo" class="logo-correo">
     </div>
-  </div>
+    
+    <!-- Columna de Textos -->
+    <div class="contenedor-textos">
+      <div class="texto-localidad">
+        <h2 class="localidad">Localidad</h2>
+        <p class="localidad-descripcion">Calle - Provincia</p>
+      </div>
 
-  <div class="contenedor-telefono">
-    <img src="Images/images/logoTelefono.png" alt="logo-telefono" class="logo-telefono">
-    <div class="texto-telefono">
-    <h2 class="telefono">Teléfono</h2>
-    <p class="teléfono-descripcion">Número de teléfono</p>
-    </div>
-  </div>
+      <div class="texto-telefono">
+        <h2 class="telefono">Teléfono</h2>
+        <p class="teléfono-descripcion">Número de teléfono</p>
+      </div>
 
-  <div class="contenedor-mail">
-    <img src="Images/images/logoCorreo.png" alt="logo-correo" class="logo-correo">
-    <div class="texto-mail">
-    <h2 class="mail">Correo electrónico</h2>
-    <p class="mail-descripcion">Dirección de correo</p>
+      <div class="texto-mail">
+        <h2 class="mail">Correo electrónico</h2>
+        <p class="mail-descripcion">Dirección de correo</p>
+      </div>
     </div>
-  </div>
+
+    <img src="Images/images/LogoFooter.png" alt="Logo-footer" class="logo">
+
+  </section>
   
-  
-  <img src="Images/images/LogoFooter.png" alt="Logo-footer" class="logo">
-</section>
 
-    <p class="derechos-reservados">&copy;Todos los derechos reservados Front End</p>
-</footer>
-
-
+  </footer>
 </body>
 </html>
