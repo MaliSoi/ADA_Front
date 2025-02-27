@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Kanban</title>
+</head>
+<body>
+    <section class="kanban-board">
+        <h2>In Progress</h2>
+        <ul class="card-list">
+            <li class="card">
+                <span class="priority high">High</span>
+                <span class="card-date">12/10/2024</span>
+                <h3>Prepare structural documentation</h3>
+                <p class="tags"><span>Development</span><span>Architecture</span></p>
+                <div class="card-footer">
+                    <span class="people">
+                        <i class="fas fa-user-friends"></i> 3 people work on this
+                    </span>
+                    <span class="comments">
+                        <i class="fas fa-comments"></i> 17 comments
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <span class="priority medium">Medium</span>
+                <span class="card-date">12/10/2024</span>
+                <h3>Update requirements list</h3>
+                <p class="tags"><span>Development</span><span>Management</span></p>           
+                <div class="card-footer">
+                <span class="people">
+                <i class="fas fa-user-friends"></i> 2 people work on this
+                 </span>
+                 <span class="comments">
+                 <i class="fas fa-comments"></i> 8 comments
+                 </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <span class="priority low">Low</span>
+                <span class="card-date">12/10/2024</span>
+                <h3>New UI for dashboard</h3>
+                <p class="tags"><span>Development</span><span>Architecture</span></p>               
+                <div class="card-footer">
+                <span class="people">
+                <i class="fas fa-user-friends"></i> 7 people work on this
+                </span>
+                <span class="comments">
+                <i class="fas fa-comments"></i> 7 comments
+                </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <span class="priority low">Low</span>
+                <span class="card-date">12/10/2024</span>
+                <h3>Initial landing page concepts</h3>
+                <p class="tags"><span>Development</span><span>Architecture</span></p>
+                <div class="card-footer">
+                <span class="people">
+                <i class="fas fa-user-friends"></i> 4 people work on this
+                </span>
+                <span class="comments">
+                <i class="fas fa-comments"></i> 2 comments
+                </span>
+                </div>
+            </li>
+        </ul>
+        <button class="add-card"><span class="plus">+</span> Add new card</button>
+    </section>
+</body>
+</html>
+
+<script>
+    // Get all cards and add today's date
+    const cards = document.querySelectorAll('.card-date');
+    const today = new Date().toLocaleDateString();
+    cards.forEach(card => {
+        card.textContent = today;
+    });
+</script>
