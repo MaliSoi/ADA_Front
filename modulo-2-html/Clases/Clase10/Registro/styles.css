@@ -126,7 +126,6 @@ legend {
     display: block;
     width: 100%;
     gap: 10px;
-    border:solid 2px yellow;
     margin-bottom: 15px; /* Añade espacio debajo de cada campo */
     padding: 5px;
 }
