@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mensaje {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#resultado {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
